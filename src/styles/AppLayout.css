@@ -1,0 +1,48 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('/sakura-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Overlay nhẹ giúp chữ rõ hơn */
+.app-layout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Đảm bảo nội dung nằm trên overlay */
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header ở trên cùng, không cố định */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nội dung chiếm hết phần còn lại */
+main {
+  flex: 1;
+  padding: 2rem 4rem;
+}
+
+/* Footer nằm dưới cùng, không cố định */
+footer {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,55 @@
+.chart-container {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.chart-title {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.chart-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.hiragana-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  justify-items: center;
+}
+
+.chart-cell {
+  width: 60px;
+  height: 60px;
+  background-color: #ffe3ec;
+  border: 1px solid #f5c2d6;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s;
+}
+
+.chart-cell:hover {
+  background-color: #ffb3d9;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.chart-cell.empty {
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+}

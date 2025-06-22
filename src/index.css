@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #a30058;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+.home {
+  text-align: center;
+  padding: 3rem;
+}
+
+.chart-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hiragana-chart {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.chart-cell {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+}
+
+.practice-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hiragana-char {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.result {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}

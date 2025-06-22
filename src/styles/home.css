@@ -1,0 +1,153 @@
+/* 🌸 Nền và layout chính */
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  font-family: "Noto Sans JP", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* 📦 Khung chính làm nổi chữ */
+.home-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  max-width: 960px;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏷️ Tiêu đề chính */
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d63384;
+  text-align: center;
+}
+
+/* 🔡 Đoạn mô tả mở đầu */
+.home p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #444;
+  text-align: center;
+}
+
+/* 📚 GIỚI THIỆU */
+.intro-section {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2rem 2rem;
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.intro-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #c2185b;
+}
+
+.intro-section ul {
+  padding-left: 1rem;
+}
+
+.intro-section li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ✨ TÍNH NĂNG NỔI BẬT */
+.features-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #c2185b;
+}
+
+.features {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  color: #444;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #d63384;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 🚀 CTA */
+.call-to-action {
+  text-align: center;
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  padding: 2rem;
+  border-radius: 16px;
+  color: #333;
+}
+
+.call-to-action h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #c2185b;
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff66aa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button:hover {
+  background-color: #e05599;
+  transform: scale(1.05);
+}

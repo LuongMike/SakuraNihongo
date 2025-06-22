@@ -1,0 +1,78 @@
+.practice-page {
+    position: relative;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url('/images/sakura-bg.jpg'); /* tùy chọn */
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.practice-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hiragana-char {
+    font-size: 5rem;
+    margin: 20px 0;
+    color: #d63384;
+}
+
+.romaji-input {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f783ac;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64980;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
