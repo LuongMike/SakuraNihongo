@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 export default function Home() {
@@ -5,7 +6,9 @@ export default function Home() {
     <div className="home">
       <div className="home-box">
         <h1>🌸 Học tiếng Nhật cùng Sakura 🌸</h1>
-        <p>Hành trình học tập ngọt ngào với Hiragana, Katakana, Kanji và JLPT.</p>
+        <p>
+          Hành trình học tập ngọt ngào với Hiragana, Katakana, Kanji và JLPT.
+        </p>
 
         <section className="intro-section">
           <h2>📚 Bạn sẽ học được gì?</h2>
@@ -39,9 +42,9 @@ export default function Home() {
         <section className="call-to-action">
           <h2>🚀 Sẵn sàng bắt đầu?</h2>
           <p>Khám phá bảng chữ cái Hiragana đầu tiên!</p>
-          <a className="cta-button" href="/hiragana">
+          <Link className="cta-button" to="/hiragana">
             Bắt đầu học
-          </a>
+          </Link>
         </section>
       </div>
     </div>
